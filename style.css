@@ -1,0 +1,200 @@
+/* Thiết lập cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #0b0c10;
+    color: #c5a059; /* Màu vàng cát đặc trưng PUBG */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f2833;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 2px solid #66fcf1; /* Viền neon dạ quang */
+}
+
+.logo {
+    color: #66fcf1;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #c5a059;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #66fcf1;
+}
+
+/* Banner */
+.hero {
+    background: linear-gradient(135deg, #1f2833, #0b0c10);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #1f2833;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    color: #a4b0be;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #fff;
+    border-left: 5px solid #66fcf1;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+/* Grid của trang chủ */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.game-card {
+    background-color: #1f2833;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #45f3ff;
+}
+.game-info { padding: 20px; color: #fff;}
+.btn-detail {
+    display: block; text-align: center; background: #66fcf1; color: #000; padding: 10px; 
+    font-weight: bold; text-decoration: none; border-radius: 4px; margin-top: 15px;
+}
+
+/* --- Danh Sách Bản Mod (Dạng Hộp) --- */
+.mod-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mod-box {
+    background-color: #1f2833;
+    border-left: 6px solid #66fcf1;
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.mod-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.mod-header h3 {
+    color: #fff;
+    font-size: 20px;
+    flex: 1;
+}
+
+/* Huy hiệu V1 V2 V3 */
+.mod-version {
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.badge-v1 { background-color: #f1c40f; } /* Vàng */
+.badge-v2 { background-color: #3498db; color: #fff; } /* Xanh */
+.badge-v3 { background-color: #9b59b6; color: #fff; } /* Tím VIP */
+
+/* Trạng thái Anti-ban */
+.mod-status {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+.mod-status.safe { background-color: rgba(46, 213, 115, 0.2); color: #2ed573; }
+.mod-status.warning { background-color: rgba(235, 94, 40, 0.2); color: #ff4757; }
+
+/* Nội dung bản mod */
+.mod-body p {
+    color: #dcdde1;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Nút tải bản mod */
+.btn-download-mod {
+    display: inline-block;
+    background-color: #2ed573;
+    color: #000;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn-download-mod:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 213, 115, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #0b0c10;
+    text-align: center;
+    padding: 25px;
+    color: #718093;
+    border-top: 1px solid #1f2833;
+    margin-top: 40px;
+}
