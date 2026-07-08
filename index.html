@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8 Ball Pool - XUMOD</title>
+    <title>XUMOD - Kho ứng dụng</title>
     <style>
         * {
             margin: 0;
@@ -13,102 +13,233 @@
         }
 
         body {
-            background: #f8f9fc;
-            line-height: 1.6;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.5;
         }
 
-        .back-bar {
-            background: #fff;
-            padding: 14px 16px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .back-bar a {
-            text-decoration: none;
-            color: #6366f1;
-            font-weight: 500;
-        }
-
-        .app-detail {
-            max-width: 550px;
-            margin: 30px auto;
-            padding: 0 16px;
-        }
-
-        .app-card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            text-align: center;
-        }
-
-        .app-big-logo {
-            width: 80px;
-            height: 80px;
-            border-radius: 16px;
-            margin: 0 auto 16px;
-        }
-
-        h1 {
-            font-size: 22px;
-            margin-bottom: 6px;
-        }
-
-        .sub-name {
-            color: #888;
-            margin-bottom: 24px;
-        }
-
-        .btn-group {
+        .app-header {
             display: flex;
+            align-items: center;
             gap: 12px;
+            padding: 20px 16px;
+            background: #fff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #222;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            margin-top: 20px;
-            flex-wrap: wrap;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
         }
 
-        .btn {
-            padding: 12px 20px;
-            border-radius: 8px;
+        .app-info h1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .app-info p {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .container {
+            padding: 16px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .category {
+            margin-bottom: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f8f9fc;
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: #f0f2fa;
+        }
+
+        .category-header h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #6366f1;
+        }
+
+        .count {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .app-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            background: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
             text-decoration: none;
+            color: inherit;
+            transition: background 0.2s;
+        }
+
+        .app-item:hover {
+            background: #f9fafc;
+        }
+
+        .app-item:last-child {
+            border-bottom: none;
+        }
+
+        .app-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .app-logo {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: #eee;
+            overflow: hidden;
+        }
+
+        .app-text h3 {
+            font-size: 16px;
             font-weight: 500;
-            min-width: 140px;
         }
 
-        .btn-download {
-            background: #2563eb;
-            color: white;
+        .app-text p {
+            font-size: 13px;
+            color: #888;
         }
 
-        .btn-key {
-            background: #f59e0b;
-            color: white;
-        }
-
-        .btn:hover {
-            opacity: 0.92;
+        .arrow {
+            color: #ccc;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
-<div class="back-bar">
-    <a href="index.html">← Quay lại trang chính</a>
+<div class="app-header">
+    <div class="app-icon">🔥</div>
+    <div class="app-info">
+        <h1>XUMOD</h1>
+        <p>Kho ứng dụng & Game Mod</p>
+    </div>
 </div>
 
-<div class="app-detail">
-    <div class="app-card">
-        <img class="app-big-logo" src="https://cdn-icons-png.flaticon.com/512/3074/3074391.png" alt="8 Ball Pool">
-        <h1>8 Ball Pool</h1>
-        <p class="sub-name">8-ball-pool</p>
-        <p>Phiên bản mod đầy đủ tính năng, hỗ trợ thiết bị iOS.</p>
+<div class="container">
 
-        <div class="btn-group">
-            <a href="link-tai-8ball.ipa" class="btn btn-download" download>📥 Tải về</a>
-            <a href="lay-key-8ball.html" class="btn btn-key">🔑 Lấy mã khóa</a>
+    <!-- Nhóm 8 Ball Pool -->
+    <div class="category">
+        <div class="category-header">
+            <h2>8 Ball Pool</h2>
+            <span class="count">1 ứng dụng</span>
         </div>
+        <a href="chi-tiet-8ball.html" class="app-item">
+            <div class="app-left">
+                <div class="app-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3074/3074391.png" alt="8 Ball Pool" width="44" height="44">
+                </div>
+                <div class="app-text">
+                    <h3>8 Ball Pool</h3>
+                    <p>8-ball-pool</p>
+                </div>
+            </div>
+            <span class="arrow">›</span>
+        </a>
     </div>
+
+    <!-- Nhóm CFM IOS -->
+    <div class="category">
+        <div class="category-header">
+            <h2>CFM IOS</h2>
+            <span class="count">3 ứng dụng</span>
+        </div>
+        <a href="chi-tiet-zoro.html" class="app-item">
+            <div class="app-left">
+                <div class="app-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/607/607358.png" alt="CFL ZORO" width="44" height="44">
+                </div>
+                <div class="app-text">
+                    <h3>CFL ZORO</h3>
+                    <p>cfl-zoro</p>
+                </div>
+            </div>
+            <span class="arrow">›</span>
+        </a>
+        <a href="chi-tiet-raven.html" class="app-item">
+            <div class="app-left">
+                <div class="app-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/607/607358.png" alt="CFL RAVEN" width="44" height="44">
+                </div>
+                <div class="app-text">
+                    <h3>CFL RAVEN</h3>
+                    <p>cfm-raven</p>
+                </div>
+            </div>
+            <span class="arrow">›</span>
+        </a>
+        <a href="chi-tiet-luxury.html" class="app-item">
+            <div class="app-left">
+                <div class="app-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/607/607358.png" alt="CFM LUXURY IOS" width="44" height="44">
+                </div>
+                <div class="app-text">
+                    <h3>CFM LUXURY IOS</h3>
+                    <p>cfm-luxury-ios</p>
+                </div>
+            </div>
+            <span class="arrow">›</span>
+        </a>
+    </div>
+
+    <!-- Nhóm Delta Force -->
+    <div class="category">
+        <div class="category-header">
+            <h2>delta force</h2>
+            <span class="count">3 ứng dụng</span>
+        </div>
+        <a href="chi-tiet-delta-vip.html" class="app-item">
+            <div class="app-left">
+                <div class="app-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3479/3479764.png" alt="DELTA IOS VIP" width="44" height="44">
+                </div>
+                <div class="app-text">
+                    <h3>DELTA IOS VIP</h3>
+                    <p>delta-ios-vip</p>
+                </div>
+            </div>
+            <span class="arrow">›</span>
+        </a>
+        <a href="chi-tiet-delta.html" class="app-item">
+            <div class="app-left">
+                <div class="app-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3479/3479764.png" alt="delta" width="44" height="44">
+                </div>
+                <div class="app-text">
+                    <h3>delta</h3>
+                    <p>delta</p>
+                </div>
+            </div>
+            <span class="arrow">›</span>
+        </a>
+    </div>
+
 </div>
 
 </body>
